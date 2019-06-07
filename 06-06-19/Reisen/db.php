@@ -1,0 +1,22 @@
+<?php
+$dbHost = "localhost";
+$dbName = "vemap02";
+$dbCharset = "utf8";
+$dbUser = "vemap";
+$dbPw = "Vemap1234=";
+
+try{
+
+	$db=new PDO(
+
+		"mysql:host=$dbHost;dbname=$dbName;charset=$dbCharset",
+		"$dbUser",
+		"$dbPw"
+
+	);
+
+}catch (PDOException $e){
+	die ("keine verbindung");
+}
+
+?>

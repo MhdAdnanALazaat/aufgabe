@@ -1,0 +1,181 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+
+body{
+	font-family:"Trebuchet MS",Arial,sans-serif;
+	color:#00243F;
+}
+img {
+    vertical-align: middle;
+    border-style: none;
+    width: 100%;
+}
+img#bg {
+	z-index:-1;
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	min-height:100%;
+}
+
+div#wrapper{
+	position:relative;
+	width:70%;
+	margin:0px auto;
+	background:rgba(255,255,255,0.75);
+}
+
+img#headerbild{
+	width:100%;
+	display:block;
+	position:relative;
+	top:0px;
+	left:0px;
+	z-index:1;
+}
+
+header{
+	position:relative;
+}
+
+header h1{
+	color:white;
+	margin:0px;
+	font-size:4em;
+	display:block;
+	position:absolute;
+	top:0.3em;
+	left:0.3em;
+	z-index:2;
+}
+
+ul#socialmedia{
+	margin:0px;
+	position:absolute;
+	bottom:10px;
+	right:10px;
+	z-index:2;
+	list-style-type:none;
+}
+
+ul#socialmedia li img{
+	width:40px;
+}
+
+
+
+
+}
+
+article h2{
+	border-bottom:1px solid navy;
+}
+
+article img{
+	float:left;
+	height:8em;
+	margin:0em 1em 1em 0em;
+}
+
+article ol{
+	list-style-position:inside; /* Aufzählungszeichen bleiben innerhalb des Textflusses. */
+	padding-left:2em;
+	border-left:5px solid lightgreen;
+}
+
+
+section#left ul{
+	margin:20px 0px 0px 0px;
+	width:90%;
+	list-style-type:none;
+	font-size:1.2em;
+}
+
+section#left ul li{
+	padding:0px 0px 3px 0px;
+	border-bottom: 1px solid blue;
+	margin: 15px 0px 0px 15px;
+}
+
+section#left a{
+	text-decoration:none;
+	color:blue;
+}
+
+section#left a:hover{
+	color:green;
+	padding:0px 0px 0px 20px;
+}
+
+.werbung {
+    border: 2px solid lightgreen;
+    margin: -48em -4em 10em 48em;
+    background: white;
+    padding: 0em;
+    width: 71%;
+    overflow: hidden;
+}
+
+.werbung h2{
+	margin: 0em 0em 1em 0em;
+	color:lightgreen;
+}
+
+
+/* Responsive Webdesign */ 
+@media (max-width:1300px){
+
+	header h1{
+		font-size:2em;
+	}
+	
+	
+	
+	section#content h1{
+		font-size:1.5em;
+	}
+
+	section#content{
+		font-size:0.7em;
+	}
+
+	section#right{
+		font-size:0.7em;
+		padding:0.7em;
+	}
+	
+	.werbung{
+		padding:0.7em;
+	}
+
+}
+
+@media (max-width:800px){
+	
+	ul#socialmedia li img{
+	width:20px;
+	}
+
+
+	.werbung{
+		padding:0.6em;
+	}
+	
+	
+	footer{
+		font-size:0.9em;
+		padding:0.9em;
+		
+	}
+}
+
+
+
+.card-img-top {
+    width: 27%;
+    border-top-left-radius: calc(.25rem - 1px);
+    border-top-right-radius: calc(.25rem - 1px);
+}
